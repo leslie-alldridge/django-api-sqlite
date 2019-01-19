@@ -128,10 +128,7 @@ REST_FRAMEWORK = {
 }
 
 # Change 'default' database configuration with $DATABASE_URL.
-DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
-
-# Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require=False))
 
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
