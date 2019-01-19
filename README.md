@@ -2,5 +2,6 @@
 django-api-sqlite backend server
 
 
-http://127.0.0.1:8000/api/v1/songs
+http://localhost:8000/api/v1/music/ <- root route 
 
+http://localhost:8000/music/savedata/  <- post requests to save information
